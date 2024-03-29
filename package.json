@@ -1,0 +1,67 @@
+{
+  "name": "Badtranslator",
+  "displayName": "Bad Translator",
+  "description": "This extension allows you to highlight text, and send it through Google Translator, and back to English, as many times as you want.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:badtranslator.translateText"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "badtranslator.translateText",
+        "title": "Google Translate Text"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Bad Translator",
+      "properties": {
+        "badtranslator.startLanguage": {
+          "type": "string",
+          "default": "auto",
+          "description": "The starting language code. Use 'auto' for automatic detection."
+        },
+        "badtranslator.endLanguage": {
+          "type": "string",
+          "default": "en",
+          "description": "The target language code."
+        },
+        "badtranslator.translationCount": {
+          "type": "integer",
+          "default": 100,
+          "description": "The number of times to translate the text."
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "badtranslator.translateText",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
