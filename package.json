@@ -2,7 +2,9 @@
   "name": "Badtranslator",
   "displayName": "Bad Translator",
   "description": "This extension allows you to highlight text, and send it through Google Translator, and back to English, as many times as you want.",
-  "version": "0.0.1",
+  "version": "1.0.1",
+  "publisher": "lordseriouspig",
+  "icon": "assets/Google-Translate.png",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -63,5 +65,9 @@
     "typescript": "^5.3.3",
     "@vscode/test-cli": "^0.0.8",
     "@vscode/test-electron": "^2.3.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lordseriouspig/Badtranslator"
   }
 }

@@ -1,6 +1,6 @@
 # Bad Translator
 
-![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![VS Code](https://img.shields.io/badge/vscode-^1.87.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -25,32 +25,25 @@ This VS Code extension allows you to translate text using Google Translate, and 
 
 You can customize the translation behavior by modifying the extension settings in your VS Code settings:
 
-- `badtranslator.startLanguage`: The starting language code. Use 'auto' for automatic detection.
-- `badtranslator.endLanguage`: The target language code.
-- `badtranslator.translationCount`: The number of times to translate the text.
+- `badtranslator.startLanguage`: The starting language code. Use 'auto' for automatic detection. This uses ISO-639-1 formatting. Get the full list [here](https://cloud.google.com/translate/docs/languages)
+- `badtranslator.endLanguage`: The target language code. This uses ISO-639-1 formatting. Get the full list [here](https://cloud.google.com/translate/docs/languages)
+- `badtranslator.translationCount`: The number of times to translate the text. I would reccomend around 100, but do not go above 1000.
 
 ## Installation
 
-1. Open Visual Studio Code.
-2. Go to the Extensions view by clicking on the square icon in the sidebar.
-3. Search for "Bad Translator" in the Extensions Marketplace.
-4. Click Install to install the extension.
-5. Once installed, you can use the extension as described in the Usage section above.
+You can get our free extension [here](https://marketplace.visualstudio.com/items?itemName=lordseriouspig.Badtranslator&ssr=false#overview)
+Simply click install, and follow the prompts from there
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
 
 ## Acknowledgements
 
 - This extension utilizes the Google Translate API for text translation.
 - Inspired by the concept of "translation telephone" and the humor of mistranslations.
 
-## Contributing
+## Support, Bugs, and suggestions
 
-Contributions are welcome! If you have any ideas for new features, improvements, or bug fixes, feel free to open an issue or submit a pull request.
-
-## Support
-
-If you encounter any issues or have any questions, please don't hesitate to reach out. You can contact the maintainer at [your-email@example.com](mailto:your-email@example.com).
+If you encounter any issues, have an idea for a feature, or need some help, please don't hesitate to create an issue.
 
