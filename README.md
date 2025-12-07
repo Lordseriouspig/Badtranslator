@@ -4,7 +4,7 @@
 ![VS Code](https://img.shields.io/badge/vscode-^1.87.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-This VS Code extension allows you to translate text using Google Translate, and back to English, as many times as you want. It's perfect for those who enjoy the chaos of mistranslations and humorous results!
+This VS Code extension allows you to translate text using Google Translate, and back to English, as many times as you want. The original intention of this extention was to make mistranslating strings files easier. 
 
 ## Features
 
